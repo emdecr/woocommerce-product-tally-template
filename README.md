@@ -1,6 +1,4 @@
 <h1 align="center">
-    <a href="https://emilydelacruz.com" target="_blank"><img src="https://emilydelacruz.com/files/connection.png" alt="atom graphic" width="80"></a>
-    <br>
     Woocommerce Product Tally Template
 </h1>
 
@@ -26,7 +24,7 @@ Author: Emily Dela Cruz
 
 In the wake of the COVID-19 outbreak, many restaurants added online ordering to their websites.
 
-One of my clients had a consistently changing roster of chefs that cooked up different meals folks could order and pick up. WooCommerce (WC) powered the online store. Each meal was a Woocommerce Product tagged with a specific Category (ie. Chef/Event).
+One of my clients had a consistently changing roster of chefs that cooked up different meals folks could order and pick up on a certain date. WooCommerce (WC) powered the online store. Each meal was a Woocommerce Product tagged with a specific Category (ie. Chef/Event).
 
 Some Chefs/Events were recurring, and orders were only differentiated by the date. A Chef/Event could have a chunk of orders for one date range, and then another chunk for a date range weeks/months later.
 
@@ -34,7 +32,7 @@ Some Chefs/Events were recurring, and orders were only differentiated by the dat
 
 There's no easy way to get a count for Products related to a specific WC Category. You can get a list of Orders linked to a specific WC Category, but then you'd have to go into each individual Order and manually count Products.
 
-My client needed a simple count of how many of each meal (WC Product) was ordered for a specific Chef/Event (WC Category). Each meal (WC Product) could have WC Variations as well. For example, there could be a WC Product/meal item like Dinner Rolls, and it could have Variations like: Pack of 2, Pack of 4, Pack of 6.
+My client needed a simple count of how many of each meal (WC Product) was ordered for a specific Chef/Event (WC Category), so he could tell the chefs how much food to prepare before the pickup date. Each meal (WC Product) could have WC Variations as well. For example, there could be a WC Product/meal item like Dinner Rolls, and it could have Variations like: Pack of 2, Pack of 4, Pack of 6.
 
 Because of the recurring Chef/Event situation, the orders needed to be filtered by date as well.
 
