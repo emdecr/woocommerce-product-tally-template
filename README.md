@@ -22,25 +22,31 @@ Author: Emily Dela Cruz
 
 ### Context
 
-In the wake of the COVID-19 outbreak, many restaurants added online ordering to their websites.
-
-One of my clients had a consistently changing roster of chefs that cooked up different meals folks could order and pick up on a certain date. WooCommerce (WC) powered the online store. Each meal was a Woocommerce Product tagged with a specific Category (ie. Chef/Event).
-
-Some Chefs/Events were recurring, and orders were only differentiated by the date. A Chef/Event could have a chunk of orders for one date range, and then another chunk for a date range weeks/months later.
+<div style="max-width: 600px">
+    In the wake of the COVID-19 outbreak, many restaurants added online ordering to their websites.
+    
+    One of my clients had a consistently changing roster of chefs that cooked up different meals folks could order and pick up on a certain date. WooCommerce (WC) powered the online store. Each meal was a Woocommerce Product tagged with a specific Category (ie. Chef/Event).
+    
+    Some Chefs/Events were recurring, and orders were only differentiated by the date. A Chef/Event could have a chunk of orders for one date range, and then another chunk for a date range weeks/months later.
+</div>
 
 ### Problem
 
-There's no easy way to get a count for Products related to a specific WC Category. You can get a list of Orders linked to a specific WC Category, but then you'd have to go into each individual Order and manually count Products.
-
-My client needed a simple count of how many of each meal (WC Product) was ordered for a specific Chef/Event (WC Category), so he could tell the chefs how much food to prepare before the pickup date. Each meal (WC Product) could have WC Variations as well. For example, there could be a WC Product/meal item like Dinner Rolls, and it could have Variations like: Pack of 2, Pack of 4, Pack of 6.
-
-Because of the recurring Chef/Event situation, the orders needed to be filtered by date as well.
+<div style="max-width: 600px">
+    There's no easy way to get a count for Products related to a specific WC Category. You can get a list of Orders linked to a specific WC Category, but then you'd have to go into each individual Order and manually count Products.
+    
+    My client needed a simple count of how many of each meal (WC Product) was ordered for a specific Chef/Event (WC Category), so he could tell the chefs how much food to prepare before the pickup date. Each meal (WC Product) could have WC Variations as well. For example, there could be a WC Product/meal item like Dinner Rolls, and it could have Variations like: Pack of 2, Pack of 4, Pack of 6.
+    
+    Because of the recurring Chef/Event situation, the orders needed to be filtered by date as well.
+</div>
 
 ## Solution
 
-I created a template that contains a form. The form has a select input that pulls in all WC Categories, and a date range selector (jQuery UI). Once a user submits the form, a bunch of checks using form data create multiple database queries (MySQL) through the global `$wpdb` variable provided by WordPress.
-
-The form then generates a table that lists each Product (which is then broken down into a sublist of Variations). Each Product and Variation have a count beside them.
+<div style="max-width: 600px">
+    I created a template that contains a form. The form has a select input that pulls in all WC Categories, and a date range selector (jQuery UI). Once a user submits the form, a bunch of checks using form data create multiple database queries (MySQL) through the global `$wpdb` variable provided by WordPress.
+    
+    The form then generates a table that lists each Product (which is then broken down into a sublist of Variations). Each Product and Variation have a count beside them.
+</div>
 
 # Installation
 
